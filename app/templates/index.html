@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Starling Round-Up</title>
+    <style>
+        :root {
+            --starling-teal: #2ED1A2;
+            --starling-navy: #0A1F44;
+            --starling-light-gray: #F5F6F7;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--starling-light-gray);
+            color: var(--starling-navy);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 8px 24px rgba(10, 31, 68, 0.12);
+            width: 100%;
+            max-width: 400px;
+            padding: 32px;
+            text-align: center;
+        }
+
+        .logo {
+            width: 140px;
+            margin-bottom: 24px;
+        }
+
+        h1 {
+            font-size: 24px;
+            font-weight: 600;
+            margin-bottom: 24px;
+            color: var(--starling-navy);
+        }
+
+        .button {
+            background-color: var(--starling-teal);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 14px 32px;
+            font-size: 16px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            margin-bottom: 24px;
+        }
+
+        .button:hover {
+            background-color: #25B88D;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(46, 209, 162, 0.3);
+        }
+
+        .button:active {
+            transform: translateY(0);
+        }
+
+        .result {
+            background-color: var(--starling-light-gray);
+            border-radius: 8px;
+            padding: 20px;
+            min-height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        .result.success {
+            border-left: 4px solid var(--starling-teal);
+        }
+    </style>
+    <script src="/static/script.js"></script>
+</head>
+<body>
+    <div class="container">
+        <img src="https://developer.starlingbank.com/2f299b262c3ea86e27dd.png" alt="Starling Bank Logo" class="logo">
+        <h1>Round-Up Tool</h1>
+        <button class="button" onclick="performRoundup()">Round Up & Save</button>
+        <div class="result" id="result">Your round-up results will appear here</div>
+    </div>
+</body>
+</html>
