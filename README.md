@@ -14,6 +14,8 @@ A Python Flask app that uses the Starling Bank API to round up your weekly spend
 - Transfers the total into a savings goal
 - Simple Flask web interface
 
+See app running - `preview.mov`
+
 ## Source structure
 
 `app/static` - Static files (CSS, JS, images)
