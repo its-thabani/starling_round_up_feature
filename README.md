@@ -15,12 +15,19 @@ A Python Flask app that uses the Starling Bank API to round up your weekly spend
 - Simple Flask web interface
 
 ## Source structure
+
 `app/static` - Static files (CSS, JS, images)
+
 `app/templates` - HTML templates
+
 `app/__init__.py` - Flask app setup
+
 `app/views.py` - Flask routes
+
 `app/roundup_service.py` - Roundup logic
+
 `app/api_client.py` - API client for Starling Bank
+
 `tests` - Unit tests and functional tests for the app
 
 ## Setup
