@@ -1,9 +1,3 @@
-# Project Details
-**Author**: Thabani Sibanda
-**Email**: thabs2@gmail.com
-**Date**: 2025-05-14
-
-
 # Starling Round-Up Tool
 
 A Python Flask app that uses the Starling Bank API to round up your weekly spending and save the difference into a savings goal.
